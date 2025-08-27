@@ -1,0 +1,157 @@
+
+bulla@AylasLenovo MINGW64 ~
+$ ls
+ -1.14-windows.xml
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{36f69021-525f-11f0-b696-80ca52016b4a}.TM.blf
+ NTUSER.DAT{36f69021-525f-11f0-b696-80ca52016b4a}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{36f69021-525f-11f0-b696-80ca52016b4a}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ test/
+
+bulla@AylasLenovo MINGW64 ~
+$ cd ~
+
+bulla@AylasLenovo MINGW64 ~
+$ git clone https://github.com/aylabullock/bookish-train.git
+Cloning into 'bookish-train'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), 12.35 KiB | 1.37 MiB/s, done.
+
+bulla@AylasLenovo MINGW64 ~
+$ ls
+ -1.14-windows.xml
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{36f69021-525f-11f0-b696-80ca52016b4a}.TM.blf
+ NTUSER.DAT{36f69021-525f-11f0-b696-80ca52016b4a}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{36f69021-525f-11f0-b696-80ca52016b4a}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ bookish-train/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ test/
+
+bulla@AylasLenovo MINGW64 ~
+$ cd bookish-train
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ ls
+README.md  learning_r.ipynb
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ touch test_file
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ ls
+README.md  learning_r.ipynb  test_file
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ cat test_file
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ cat README.md
+Test readme
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ git add test_file
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test_file
+
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ git commit -m "Added test_file"
+[main 9853c4a] Added test_file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test_file
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ git log
+commit 9853c4a541f2d80289b18929fd8ab5d2e3c1ebdb (HEAD -> main)
+Author: Ayla Bullock <bull.ayla@gmail.com>
+Date:   Tue Aug 26 19:44:16 2025 -0400
+
+    Added test_file
+
+commit 2211c6647ff08db0fb68c6844fb7cc2e84afbf7e (origin/main, origin/HEAD)
+Author: aylabullock <112412331+aylabullock@users.noreply.github.com>
+Date:   Tue Aug 26 19:32:10 2025 -0400
+
+    Add files via upload
+
+commit d1cf9f33e2dd11712f88ed570a51d2fd7309977b
+Author: Ayla Bullock <bull.ayla@gmail.com>
+Date:   Fri Aug 22 14:10:45 2025 -0400
+
+    initial commit
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/aylabullock/bookish-train.git
+   2211c66..9853c4a  main -> main
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$ ^C
+
+bulla@AylasLenovo MINGW64 ~/bookish-train (main)
+$
+INFO: Type "CLIP /?" for usage.
